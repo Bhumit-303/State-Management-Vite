@@ -1,4 +1,56 @@
 #root {
+  margin: auto;
+  width: 80%;
+  margin-top: 0px;
+}
+.container {
+  max-width: 60%;
+  margin: auto;
+  padding: 20px;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+.form-container input[type="text"],
+.form-container select {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.form-container label {
+  margin-right: 10px;
+}
+
+.task-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: green;
+}
+
+.task-item button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background-color: #ddd;
+}
+
+
+
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +91,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

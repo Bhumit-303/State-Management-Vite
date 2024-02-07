@@ -71,8 +71,8 @@ function App() {
   }
 
   return (
-    <>
-      <div>
+    <div className="container">
+      <div className="form-container">
         <form onSubmit={handleSubmit}>
           <input name="task" type="text" placeholder="Add Task" value={formState.task} onChange={handleChange} />
           <label>
@@ -80,12 +80,12 @@ function App() {
             <input name="completed" type="checkbox" checked={formState.completed} onChange={handleChange} />
           </label>
           <select name="taskAssignedTo" value={formState.taskAssignedTo} onChange={handleChange}>
-            <option value="">Select Assignment</option>
-            <option value="Bhumit">Bhumit</option>
-            <option value="Abhay">Abhay</option>
-            <option value="Avinash">Avinash</option>
-            <option value="Abhishek">Abhishek</option>
-            <option value="Shivam">Shivam</option>
+            <option value="">Select Assignee</option>
+            <option value="Bruce">Bruce</option>
+            <option value="Barry">Barry</option>
+            <option value="Clark">Clark</option>
+            <option value="Oliver">Oliver</option>
+            <option value="Jina">Jina</option>
           </select>
           <button type="submit">Add Task</button>
         </form>
@@ -99,7 +99,7 @@ function App() {
           onToggle={() => handleToggle(index)}
         />
       ))}
-    </>
+    </div>
   );
 }
 
